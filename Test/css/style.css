@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&display=swap');
+body{
+	background-color: #f1f1f1;
+	color: #555;
+	font-family: 'Dancing Script', cursive;
+	line-height: 1.6em;
+	margin:0;
+	padding:0;
+}
+h1{
+	font-family: 'Bangers', cursive;
+	letter-spacing: 3px;
+}
+p{
+	font-size: 20px;
+	font-variant: italic;
+}
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+#main-header{
+	background-color: #333;
+	color: #fff;
+}
+#navbar{
+	background-color: darkred;
+	color: #fff;
+}
+#navbar ul{
+	list-style: none;
+	padding: 0;
+}
+#navbar li{
+	display: inline;
+	margin-right: 20px;
+}
+#navbar a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+#navbar a:hover{
+	color: yellow;
+}
+#showcase{
+	background-image: url(../images/1.jpg);
+	background-position: center center;
+	background-size: cover;
+	min-height: 300px;
+	padding-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#showcase h1{
+	color: #fff;
+	font-size: 60px;
+	line-height: 1.6em;
+	font-family: 'Bangers', cursive;
+
+}
+.article{
+	float: left;
+	width: 70%;
+	color: #555;
+	padding: 10px;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+.sidebar-article{
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	margin-top: 30px;
+	box-sizing: border-box;
+	text-align: justify;
+}
+#main-footer{
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding:20px;
+	font-weight: 800;
+	font-size: 25px;
+	font-family: 'Bangers', cursive;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+@media (max-width: 600px){
+	.article{
+		float: none;
+		width: 100%;
+	}
+	.sidebar-article{
+		float: none;
+		width: 100%;
+	}
+	#navbar ul{
+		
+		list-style-type: square;
+		color:white;
+		padding: 0;
+	}
+	#navbar li{
+		display: block;
+		margin-right: 20px;
+	}
+	h1{
+		text-align: center;
+	
+	}
+	#showcase h1{
+		color: yellow;
+	}
+	}
+
+	@media (max-width: 960px){
+		.article{
+			float: left;
+			width: 50%;
+		}
+		.sidebar-article{
+			float: right;
+			width: 50%;
+		}
+}
